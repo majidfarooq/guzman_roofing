@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('font/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('font/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Base font fallback */
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: #1E1E1E;
+  background-color: #FFFFFF;
+}
+
+/* Bootstrap customizations - Override Bootstrap's default blue */
+:root {
+  --bs-primary: #EC2224 !important;
+  --bs-secondary: #1E1E1E;
+  --bs-light: #f8f9fa;
+  --bs-dark: #1E1E1E;
+}
+
+/* Force all button colors to red */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active {
+  background-color: #EC2224 !important;
+  border-color: #EC2224 !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #dc2626 !important;
+  border-color: #dc2626 !important;
+  color: white !important;
+}
+
+.btn-outline-primary,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.active {
+  color: #EC2224 !important;
+  border-color: #EC2224 !important;
+  background-color: white !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #EC2224 !important;
+  border-color: #EC2224 !important;
+  color: white !important;
+}
+
+.text-primary {
+  color: #EC2224 !important;
+}
+
+.bg-primary {
+  background-color: #EC2224 !important;
+}
+
+/* Force override for all primary background variations */
+.bg-primary,
+.bg-primary-*,
+[class*="bg-primary"] {
+  background-color: #EC2224 !important;
+}
+
+/* Override Bootstrap's CSS custom properties */
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(236, 34, 36, var(--bs-bg-opacity)) !important;
+}
+
+/* Additional button overrides */
+a.btn-primary,
+button.btn-primary,
+input.btn-primary {
+  background-color: #EC2224 !important;
+  border-color: #EC2224 !important;
+  color: white !important;
+}
+
+a.btn-outline-primary,
+button.btn-outline-primary,
+input.btn-outline-primary {
+  color: #EC2224 !important;
+  border-color: #EC2224 !important;
+  background-color: white !important;
+}
+
+/* Hero image sizing */
+.hero-bg {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  min-height: 70vh;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Hero section adjustments */
+.hero-section {
+  background-color: white;
+  padding: 0px 0 119px 0;
+}
+
+.hero-content {
+  min-height: 80vh;
+}
+
+/* Custom typography to match design */
+h1 {
+  font-size: 54px;
+  font-weight: bold;
+}
+h2{
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 118%;
+    letter-spacing: -5%;
+}
+.hero-h1 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 114%;
+  letter-spacing: -4%;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h5 {
+  color: #1E1E1E;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+/* Feature description paragraphs */
+.feature-description {
+  font-weight: 300; /* Light */
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+/* Global paragraph styles */
+p {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400; /* Regular */
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: -2%;
+  color: #6B7280; /* Neutral/grey color */
+}
+
+/* White paragraph for hero section */
+p.text-white-50 {
+  color: white !important;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400; /* Regular */
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: -2%;
+}
+
+/* Form background pattern */
+.form-bg {
+  background-image: url('assets/bg_white.png');
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+/* Optional: reduce badge rounding to match design */
+.review-badge {
+  border-radius: 0.5rem;
+}
+
+
