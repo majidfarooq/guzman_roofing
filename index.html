@@ -10,6 +10,9 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     
@@ -293,85 +296,537 @@
         </div>
       </section>
 
-      <!-- Services / Features -->
-      <section id="services" class="container max-w-7xl py-14 md:py-20">
-        <div class="max-w-2xl mb-10">
-          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-ink">Our Services</h2>
-          <p class="mt-3 text-slate-700">From shingles to metal roofing—comprehensive solutions built to last.</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <article class="rounded-xl border border-slate-200 p-6 hover:shadow-sm">
-            <div class="h-12 w-12 rounded-md bg-brand-50 text-brand-700 flex items-center justify-center mb-4">R</div>
-            <h3 class="text-lg font-semibold text-ink">Roof Installation</h3>
-            <p class="mt-2 text-slate-700">Premium materials and expert installation tailored to your property.</p>
-          </article>
-          <article class="rounded-xl border border-slate-200 p-6 hover:shadow-sm">
-            <div class="h-12 w-12 rounded-md bg-brand-50 text-brand-700 flex items-center justify-center mb-4">F</div>
-            <h3 class="text-lg font-semibold text-ink">Roof Repair</h3>
-            <p class="mt-2 text-slate-700">Leak fixes, storm damage, and preventative maintenance.</p>
-          </article>
-          <article class="rounded-xl border border-slate-200 p-6 hover:shadow-sm">
-            <div class="h-12 w-12 rounded-md bg-brand-50 text-brand-700 flex items-center justify-center mb-4">I</div>
-            <h3 class="text-lg font-semibold text-ink">Inspection</h3>
-            <p class="mt-2 text-slate-700">Detailed inspections with clear recommendations and next steps.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- Reviews / Testimonials -->
-      <section id="reviews" class="bg-slate-50 py-14 md:py-20">
-        <div class="container max-w-7xl">
-          <div class="max-w-2xl mb-10">
-            <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-ink">What Customers Say</h2>
-            <p class="mt-3 text-slate-700">We take pride in craftsmanship and service.</p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <figure class="rounded-xl border border-slate-200 bg-white p-6">
-              <blockquote class="text-slate-800">“Fast, professional, and the roof looks amazing.”</blockquote>
-              <figcaption class="mt-4 text-sm text-slate-600">— Homeowner</figcaption>
-            </figure>
-            <figure class="rounded-xl border border-slate-200 bg-white p-6">
-              <blockquote class="text-slate-800">“Clear pricing and great communication from start to finish.”</blockquote>
-              <figcaption class="mt-4 text-sm text-slate-600">— Property Manager</figcaption>
-            </figure>
-            <figure class="rounded-xl border border-slate-200 bg-white p-6">
-              <blockquote class="text-slate-800">“Quality work—we recommend them to our neighbors.”</blockquote>
-              <figcaption class="mt-4 text-sm text-slate-600">— Business Owner</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact / CTA -->
-      <section id="contact" class="container max-w-5xl py-14 md:py-20">
-        <div class="rounded-2xl border border-slate-200 p-8 md:p-10">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-2xl font-bold text-ink">Request a Free Quote</h3>
-              <p class="mt-2 text-slate-700">Tell us about your project and we’ll get back within 1 business day.</p>
+      <!-- Proven Results Section -->
+      <section class="py-5 proven-results-section">
+        <div class="container">
+          <!-- Full Width Heading Section -->
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2 class="mb-3">
+                Proven Results for <span class="text-primary">Memphis Homes</span>
+              </h2>
+              <p class="mb-0">Professional craftsmanship backed by satisfied customers</p>
             </div>
-            <form class="grid grid-cols-1 gap-4">
-              <input type="text" name="name" placeholder="Full name" class="w-full rounded-md border border-slate-300 px-3 py-2" />
-              <input type="tel" name="phone" placeholder="Phone" class="w-full rounded-md border border-slate-300 px-3 py-2" />
-              <input type="email" name="email" placeholder="Email" class="w-full rounded-md border border-slate-300 px-3 py-2" />
-              <textarea name="message" placeholder="Project details" rows="4" class="w-full rounded-md border border-slate-300 px-3 py-2"></textarea>
-              <button type="submit" class="inline-flex justify-center px-5 py-2.5 rounded-md bg-brand-600 text-white hover:bg-brand-700">Send Request</button>
-            </form>
+          </div>
+          
+          <!-- Image and Testimonial Section -->
+          <div class="row align-items-center">
+            <!-- Left Content - Before/After Image (Right Aligned) -->
+            <div class="col-lg-6">
+              <div class="d-flex justify-content-center justify-content-lg-end pe-0">
+                <img src="assets/before_after_roof.png" alt="Before and After Roof Transformation" class="img-fluid" style="max-width: 100%; height: auto;">
+              </div>
+            </div>
+            
+            <!-- Right Content - Testimonial Slider (Left Aligned) -->
+            <div class="col-lg-6">
+              <div class="d-flex justify-content-center justify-content-lg-start ps-0">
+                <div class="bg-white rounded testimonial-card p-3" style="width: 450px; min-height: 280px;">
+                  <!-- Testimonial Slider Container -->
+                  <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <!-- Testimonial 1 -->
+                      <div class="carousel-item active">
+                        <!-- Star Rating -->
+                        <div class="d-flex justify-content-start mb-3">
+                          <div class="d-flex gap-1">
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                          </div>
+                        </div>
+                        
+                        <!-- Quote Icon -->
+                        <div class="text-end mb-3">
+                          <i class="fas fa-quote-right quote-icon"></i>
+                        </div>
+                        
+                        <!-- Testimonial Text -->
+                        <blockquote class="text-start mb-4">
+                          <p class="mb-0">"Very professional people who do exactly what they say. They provided several options and walked us through the entire process. Beautiful workmanship and professionalism throughout."</p>
+                        </blockquote>
+                        
+                        <!-- Customer Info -->
+                        <div class="text-start mb-4">
+                          <div class="customer-name">Osvaldo Garcia</div>
+                          <div class="customer-title">Memphis Homeowner</div>
+                        </div>
+                      </div>
+                      
+                      <!-- Testimonial 2 -->
+                      <div class="carousel-item">
+                        <!-- Star Rating -->
+                        <div class="d-flex justify-content-start mb-3">
+                          <div class="d-flex gap-1">
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                          </div>
+                        </div>
+                        
+                        <!-- Quote Icon -->
+                        <div class="text-end mb-3">
+                          <i class="fas fa-quote-right quote-icon"></i>
+                        </div>
+                        
+                        <!-- Testimonial Text -->
+                        <blockquote class="text-start mb-4">
+                          <p class="mb-0">"Excellent work! The team was punctual, clean, and completed the job ahead of schedule. Our new roof looks amazing and we couldn't be happier with the quality of work."</p>
+                        </blockquote>
+                        
+                        <!-- Customer Info -->
+                        <div class="text-start mb-4">
+                          <div class="customer-name">Sarah Johnson</div>
+                          <div class="customer-title">Memphis Homeowner</div>
+                        </div>
+                      </div>
+                      
+                      <!-- Testimonial 3 -->
+                      <div class="carousel-item">
+                        <!-- Star Rating -->
+                        <div class="d-flex justify-content-start mb-3">
+                          <div class="d-flex gap-1">
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                            <i class="fas fa-star stars"></i>
+                          </div>
+                        </div>
+                        
+                        <!-- Quote Icon -->
+                        <div class="text-end mb-3">
+                          <i class="fas fa-quote-right quote-icon"></i>
+                        </div>
+                        
+                        <!-- Testimonial Text -->
+                        <blockquote class="text-start mb-4">
+                          <p class="mb-0">"Outstanding service from start to finish. They handled everything professionally and kept us informed throughout the entire process. Highly recommend Guzman Roofing!"</p>
+                        </blockquote>
+                        
+                        <!-- Customer Info -->
+                        <div class="text-start mb-4">
+                          <div class="customer-name">Michael Rodriguez</div>
+                          <div class="customer-title">Memphis Homeowner</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <div class="d-flex justify-content-end gap-2" style="margin-top: -20px;">
+                      <button class="nav-arrow" type="button" data-bs-target="#testimonialSlider" data-bs-slide="prev">
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <button class="nav-arrow" type="button" data-bs-target="#testimonialSlider" data-bs-slide="next">
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-slate-200">
-      <div class="container max-w-7xl py-8">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p class="text-slate-600 text-sm">© <span id="year"></span> Guzman Roofing. All rights reserved.</p>
-          <nav class="flex items-center gap-6 text-sm">
-            <a href="#" class="text-slate-700 hover:text-ink">Privacy</a>
-            <a href="#" class="text-slate-700 hover:text-ink">Terms</a>
-            <a href="#contact" class="text-slate-700 hover:text-ink">Contact</a>
-          </nav>
+      <!-- Risk-Free Assessment Banner -->
+      <section class="py-5 risk-free-section" style="background-color: #E31E24; position: relative;">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Left Content - Red Banner -->
+            <div class="col-lg-6">
+              <div class="text-white">
+                <h2 class="text-white mb-3">Risk-Free Assessment</h2>
+                <p class="text-white mb-4">Same-day inspections • Written quote in 24 hours</p>
+                
+                <!-- Bullet Points -->
+                <div class="mb-4">
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fas fa-check text-white me-3"></i>
+                    <span class="text-white">Zero down available</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fas fa-check text-white me-3"></i>
+                    <span class="text-white">Same-day inspection</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fas fa-check text-white me-3"></i>
+                    <span class="text-white">0% APR OAC</span>
+                  </div>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="fas fa-check text-white me-3"></i>
+                    <span class="text-white">Workmanship warranty</span>
+                  </div>
+                </div>
+                
+                <!-- Buttons -->
+                <div class="d-flex gap-3">
+                  <button class="btn btn-dark">Free Estimate</button>
+                  <button class="btn btn-outline-light">Financing Options</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Roof Image - Absolutely Positioned -->
+        <div class="roof-image-absolute">
+          <img src="assets/riskfree-roof-image.png" alt="Roof with skylight" class="img-fluid">
+        </div>
+      </section>
+
+      <!-- Statistics Section -->
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex justify-content-center align-items-center">
+                <!-- Statistics with dividers -->
+                <div class="d-flex align-items-center">
+                  <!-- First Statistic -->
+                  <div class="text-center px-5">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Years Experience</div>
+                  </div>
+                  
+                  <!-- Divider -->
+                  <div class="stat-divider"></div>
+                  
+                  <!-- Second Statistic -->
+                  <div class="text-center px-5">
+                    <div class="stat-number">120+</div>
+                    <div class="stat-label">Projects Completed</div>
+                  </div>
+                  
+                  <!-- Divider -->
+                  <div class="stat-divider"></div>
+                  
+                  <!-- Third Statistic -->
+                  <div class="text-center px-5">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Licensed & Insured</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Left Content - Dark Teal Background -->
+            <div class="col-lg-6 services-left-bg">
+              <div class="p-5">
+                <h2 class="text-white mb-3">Professional Roofing Services</h2>
+                <h3 class="text-white mb-4">Trusted roofing solutions for Memphis homeowners</h3>
+                <p class="text-white mb-4">Guzman Roofing provides comprehensive roofing services including emergency repairs, roof replacement, inspections, and storm damage assistance. Our experienced team ensures quality workmanship and customer satisfaction.</p>
+                <div class="text-center">
+                  <button class="btn btn-primary">View More</button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Right Content - Service Cards Grid -->
+            <div class="col-lg-6">
+              <div class="p-5">
+                <div class="row g-4">
+                  <!-- Left Column - Taller -->
+                  <div class="col-md-6">
+                    <div class="d-flex flex-column h-100">
+                      <!-- Emergency Repairs Card (Red) - Top -->
+                      <div class="service-card emergency-card mb-4">
+                        <div class="service-icon mb-3">
+                          <i class="fas fa-bell"></i>
+                        </div>
+                        <h4 class="text-white mb-3">Emergency Repairs</h4>
+                        <p class="text-white mb-0">24/7 fast and reliable help for storm damage, leaks, and fallen debris. We respond quickly to protect your property.</p>
+                      </div>
+                      
+                      <!-- Roof Inspection Card (White) - Bottom -->
+                      <div class="service-card white-card">
+                        <div class="service-icon red-icon mb-3">
+                          <i class="fas fa-search"></i>
+                        </div>
+                        <h4 class="mb-3">Roof Inspection</h4>
+                        <p class="mb-0">Regular inspections to catch small issues early. We assess shingles, flashing, gutters, and overall roof health.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Right Column - Shorter -->
+                  <div class="col-md-6">
+                    <div class="d-flex flex-column h-100">
+                      <!-- Roof Replacement Card (White) - Top -->
+                      <div class="service-card white-card mb-4">
+                        <div class="service-icon red-icon mb-3">
+                          <i class="fas fa-home"></i>
+                        </div>
+                        <h4 class="mb-3">Roof Replacement</h4>
+                        <p class="mb-0">Full roof replacement with durable materials and professional installation for a stress-free process.</p>
+                      </div>
+                      
+                      <!-- Storm Damage & Insurance Card (White) - Bottom -->
+                      <div class="service-card white-card">
+                        <div class="service-icon red-icon mb-3">
+                          <i class="fas fa-cloud-rain"></i>
+                        </div>
+                        <h4 class="mb-3">Storm Damage & Insurance</h4>
+                        <p class="mb-0">We handle storm-related damage and assist with insurance claims to restore your roof efficiently.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="py-5 faq-section">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <h2 class="mb-3">Frequently Asked <span class="text-primary">Questions</span></h2>
+              <p class="mb-0">Straight answers so you can decide with confidence</p>
+            </div>
+          </div>
+          
+          <div class="row align-items-center">
+            <!-- Left Content - FAQ Accordion -->
+            <div class="col-lg-6">
+              <div class="faq-container">
+                <div class="accordion" id="faqAccordion">
+                  <!-- FAQ Item 1 - Expanded -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        How soon can you inspect my roof?
+                      </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur. Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- FAQ Item 2 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Do you help with insurance claims?
+                      </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        Yes, we work directly with insurance companies to help you navigate the claims process and ensure you get the coverage you deserve.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- FAQ Item 3 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        What does the estimate include?
+                      </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        Our detailed estimates include materials, labor, permits, cleanup, and warranty information. No hidden fees or surprises.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- FAQ Item 4 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq4">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Repair or replace—how do you decide?
+                      </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        We assess the roof's age, damage extent, and cost-effectiveness. We'll recommend the most economical solution for your specific situation.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- FAQ Item 5 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq5">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        Do you offer financing?
+                      </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        Yes, we offer flexible financing options with competitive rates to make your roofing project affordable.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Right Content - Overlapping Images -->
+            <div class="col-lg-6">
+              <div class="">
+                <!-- Foreground Image -->
+                <div class="">
+                  <img src="assets/faq_right.png" alt="Roofer installing shingles" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Red Call-to-Action Box -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-box">
+            <h2 class="cta-title">Need quick help?</h2>
+            <p class="cta-subtitle">Talk to a project specialist now or send a question.</p>
+            
+            <!-- Bullet Points -->
+            <div class="cta-benefits">
+              <div class="cta-benefit-item">
+                <i class="fas fa-check cta-check-icon"></i>
+                <span>Same/next-day inspections</span>
+              </div>
+              <div class="cta-benefit-item">
+                <i class="fas fa-check cta-check-icon"></i>
+                <span>Written quote in 24 hours</span>
+              </div>
+              <div class="cta-benefit-item">
+                <i class="fas fa-check cta-check-icon"></i>
+                <span>Licensed & insured</span>
+              </div>
+            </div>
+            
+            <!-- Buttons -->
+            <div class="cta-buttons">
+              <button class="btn cta-call-btn">
+                <i class="fas fa-phone me-2"></i>
+                Call Now
+              </button>
+              <button class="btn cta-question-btn">
+                Ask a Question
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <!-- Company Branding -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="footer-brand">
+              <img src="assets/footer logo.png" alt="Guzman Roofing Logo" class="footer-logo mb-3">
+              <p class="footer-tagline mb-3">Memphis area's trusted roofing professionals</p>
+              <p class="footer-credentials">
+                Licensed - Bonded - Insured - <span class="text-primary">20+ Years Experience</span>
+              </p>
+            </div>
+          </div>
+          
+          <!-- Services Column -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 class="footer-heading mb-3">Services</h5>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Roof Replacement</a></li>
+              <li><a href="#" class="footer-link">Emergency Repairs</a></li>
+              <li><a href="#" class="footer-link">Storm Damage</a></li>
+              <li><a href="#" class="footer-link">Inspections</a></li>
+            </ul>
+          </div>
+          
+          <!-- Company Column -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 class="footer-heading mb-3">Company</h5>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Reviews</a></li>
+              <li><a href="#" class="footer-link">Service Areas</a></li>
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          
+          <!-- Business Info Column -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 class="footer-heading mb-3">Business Info</h5>
+            <ul class="footer-list">
+              <li><span class="footer-text">TN License: #12345</span></li>
+              <li><span class="footer-text">Fully Bonded & Insured</span></li>
+              <li><span class="footer-text">A+ BBB Rating</span></li>
+              <li><span class="footer-text">Serving Greater Memphis</span></li>
+            </ul>
+          </div>
+          
+          <!-- Contact Details Column -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="footer-heading mb-3">Contact Details</h5>
+            <ul class="footer-list">
+              <li class="footer-contact-item">
+                <i class="fas fa-phone footer-icon"></i>
+                <span class="footer-text">(901) 264-3363</span>
+              </li>
+              <li class="footer-contact-item">
+                <i class="fas fa-clock footer-icon"></i>
+                <span class="footer-text">Mon-Sat: 7am-6pm</span>
+              </li>
+              <li class="footer-contact-item">
+                <i class="fas fa-envelope footer-icon"></i>
+                <span class="footer-text">contactus@guzmanroofing.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Bottom Footer Bar -->
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <p class="footer-copyright mb-0">© 2025 Guzman Roofing And Construction. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="footer-social">
+                <a href="#" class="footer-social-link">
+                  <img src="assets/facebook.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="#" class="footer-social-link">
+                  <img src="assets/x.png" alt="Twitter/X" class="social-icon">
+                </a>
+                <a href="#" class="footer-social-link">
+                  <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="#" class="footer-social-link">
+                  <img src="assets/instagram.png" alt="Instagram" class="social-icon">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 text-md-end">
+              <div class="footer-legal">
+                <a href="#" class="footer-legal-link">Privacy Policy</a>
+                <span class="footer-separator">|</span>
+                <a href="#" class="footer-legal-link">Terms Of Service</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
