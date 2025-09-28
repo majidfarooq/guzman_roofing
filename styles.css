@@ -171,6 +171,7 @@ h5 {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 600px;
+  padding-bottom: 12rem !important;
 }
 
 /* Left image in proven results section */
