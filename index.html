@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Guzman Roofing - Memphis Roofing Company</title>
     <meta name="description" content="Licensed and insured roofing company serving Memphis, TN. Professional roofing services with 20+ years experience." />
-
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -115,7 +117,7 @@
         <div class="container position-relative" style="z-index: 10;">
           <div class="row align-items-center hero-content">
             <!-- Left Content -->
-            <div class="col-lg-6 text-white">
+            <div class="col-lg-6 text-white my-3">
               <div class="mb-4">
                 <!-- Trust Badge -->
                 <div class="d-inline-block bg-primary px-4 py-2 rounded">
@@ -135,7 +137,9 @@
 
               <!-- Social Proof Badges -->
               <div class="d-flex flex-wrap gap-3">
-                <div class="d-flex align-items-center gap-3 bg-white bg-opacity-10 rounded px-3 py-2" style="">
+                <img src="assets/google-reviews.png" alt="Google Reviews" class="">
+                <img src="assets/facebook-reviews.png" alt="Facebook Reviews" class="">
+                <!-- <div class="d-flex align-items-center gap-3 bg-white bg-opacity-10 rounded px-3 py-2" style="">
                   <div class="bg-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="text-primary">
                       <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -160,7 +164,7 @@
                     <div class="small fw-semibold text-white">Facebook Reviews</div>
                     <div class="small text-white-50">5.0 Rating • 50+ Reviews</div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -288,7 +292,7 @@
               <div class="position-relative">
                 <!-- Main Image -->
                 <div class="mb-4">
-                  <img src="assets/why-choose-us-image.png" alt="Why choose Guzman Roofing" class="img-fluid rounded" style="width: 100%; object-fit: cover;">
+                  <img src="assets/why-choose-us-image.png" alt="Why choose Guzman Roofing" class="img-fluid my-3 rounded" style="width: 100%; object-fit: cover;">
                 </div>
               </div>
             </div>
@@ -321,12 +325,17 @@
             <!-- Right Content - Testimonial Slider (Left Aligned) -->
             <div class="col-lg-6">
               <div class="d-flex justify-content-center justify-content-lg-start ps-0">
-                <div class="bg-white rounded testimonial-card p-3" style="width: 450px; min-height: 280px;">
+                <div class="bg-white rounded testimonial-card p-3" style="width: 550px; min-height: 320px;">
                   <!-- Testimonial Slider Container -->
                   <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <!-- Testimonial 1 -->
                       <div class="carousel-item active">
+                        <!-- Quote Icon -->
+                        <div class="text-end mb-3">
+                          <i class="fas fa-quote-right quote-icon"></i>
+                        </div>
+                        
                         <!-- Star Rating -->
                         <div class="d-flex justify-content-start mb-3">
                           <div class="d-flex gap-1">
@@ -336,11 +345,6 @@
                             <i class="fas fa-star stars"></i>
                             <i class="fas fa-star stars"></i>
                           </div>
-                        </div>
-                        
-                        <!-- Quote Icon -->
-                        <div class="text-end mb-3">
-                          <i class="fas fa-quote-right quote-icon"></i>
                         </div>
                         
                         <!-- Testimonial Text -->
@@ -357,6 +361,11 @@
                       
                       <!-- Testimonial 2 -->
                       <div class="carousel-item">
+                        <!-- Quote Icon -->
+                        <div class="text-end mb-3">
+                          <i class="fas fa-quote-right quote-icon"></i>
+                        </div>
+                        
                         <!-- Star Rating -->
                         <div class="d-flex justify-content-start mb-3">
                           <div class="d-flex gap-1">
@@ -366,11 +375,6 @@
                             <i class="fas fa-star stars"></i>
                             <i class="fas fa-star stars"></i>
                           </div>
-                        </div>
-                        
-                        <!-- Quote Icon -->
-                        <div class="text-end mb-3">
-                          <i class="fas fa-quote-right quote-icon"></i>
                         </div>
                         
                         <!-- Testimonial Text -->
@@ -387,6 +391,11 @@
                       
                       <!-- Testimonial 3 -->
                       <div class="carousel-item">
+                        <!-- Quote Icon -->
+                        <div class="text-end mb-3">
+                          <i class="fas fa-quote-right quote-icon"></i>
+                        </div>
+                        
                         <!-- Star Rating -->
                         <div class="d-flex justify-content-start mb-3">
                           <div class="d-flex gap-1">
@@ -396,11 +405,6 @@
                             <i class="fas fa-star stars"></i>
                             <i class="fas fa-star stars"></i>
                           </div>
-                        </div>
-                        
-                        <!-- Quote Icon -->
-                        <div class="text-end mb-3">
-                          <i class="fas fa-quote-right quote-icon"></i>
                         </div>
                         
                         <!-- Testimonial Text -->
@@ -417,12 +421,12 @@
                     </div>
                     
                     <!-- Navigation Arrows -->
-                    <div class="d-flex justify-content-end gap-2" style="margin-top: -20px;">
+                    <div class="d-flex justify-content-end gap-2 testimonial-arrows" style="margin-top: -20px;">
                       <button class="nav-arrow" type="button" data-bs-target="#testimonialSlider" data-bs-slide="prev">
-                        <i class="fas fa-chevron-left"></i>
+                        <img src="assets/arrow_left.png" alt="Previous" class="arrow-icon">
                       </button>
                       <button class="nav-arrow" type="button" data-bs-target="#testimonialSlider" data-bs-slide="next">
-                        <i class="fas fa-chevron-right"></i>
+                        <img src="assets/arrow_right.png" alt="Next" class="arrow-icon">
                       </button>
                     </div>
                   </div>
@@ -582,6 +586,62 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="py-5 gallery-section">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="row mb-5">
+            <div class="col-12">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h2 class="mb-3">Our <span class="text-primary">Gallery</span></h2>
+                  <p class="mb-0">Take a look at our recent roofing projects that showcase the quality, safety, and craftsmanship.</p>
+                </div>
+                <!-- Navigation Arrows -->
+                <div class="d-flex gap-2">
+                  <button class="gallery-nav-btn" id="galleryPrev">
+                    <img src="assets/arrow_left.png" alt="Previous" class="arrow-icon">
+                  </button>
+                  <button class="gallery-nav-btn" id="galleryNext">
+                    <img src="assets/arrow_right.png" alt="Next" class="arrow-icon">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Gallery Slider -->
+          <div class="gallery-slider-container">
+            <div class="gallery-slider" id="gallerySlider">
+              <div class="gallery-item">
+                <img src="assets/gallery/gallery_1.jpg" alt="Roofing Project 1" class="gallery-image" data-large="assets/gallery/gallery_1_large.jpg">
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/gallery/gallery_2.jpg" alt="Roofing Project 2" class="gallery-image" data-large="assets/gallery/gallery_2_large.jpg">
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/gallery/gallery_3.jpg" alt="Roofing Project 3" class="gallery-image" data-large="assets/gallery/gallery_3_large.jpg">
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
+                </div>
+              </div>
+              <div class="gallery-item">
+                <img src="assets/gallery/gallery_4.jpg" alt="Roofing Project 4" class="gallery-image" data-large="assets/gallery/gallery_4_large.jpg">
+                <div class="gallery-overlay">
+                  <i class="fas fa-search-plus"></i>
                 </div>
               </div>
             </div>
@@ -832,7 +892,11 @@
     </footer>
 
     <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+      // Fix: Check if element exists before setting textContent
+      const yearElement = document.getElementById('year');
+      if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+      }
       (function () {
         var button = document.getElementById('mobile-menu-button');
         var menu = document.getElementById('mobile-menu');
@@ -848,6 +912,174 @@
           }
         });
       })();
+
+      // Gallery image click functionality - Global function
+      function openImageModal(imgSrc) {
+        console.log('Opening modal with image:', imgSrc);
+        
+        // Create modal overlay
+        const modal = document.createElement('div');
+        modal.id = 'gallery-modal';
+        modal.style.cssText = `
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.9);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 10000;
+          cursor: pointer;
+        `;
+        
+        // Create large image
+        const largeImg = document.createElement('img');
+        largeImg.src = imgSrc;
+        largeImg.style.cssText = `
+          max-width: 90%;
+          max-height: 90%;
+          object-fit: contain;
+          border-radius: 8px;
+          pointer-events: none;
+        `;
+        
+        modal.appendChild(largeImg);
+        document.body.appendChild(modal);
+        
+        // Close modal on click
+        modal.addEventListener('click', function() {
+          if (document.body.contains(modal)) {
+            document.body.removeChild(modal);
+          }
+        });
+        
+        // Close modal on escape key
+        const handleEscape = function(e) {
+          if (e.key === 'Escape') {
+            const existingModal = document.getElementById('gallery-modal');
+            if (existingModal && document.body.contains(existingModal)) {
+              document.body.removeChild(existingModal);
+            }
+            document.removeEventListener('keydown', handleEscape);
+          }
+        };
+        document.addEventListener('keydown', handleEscape);
+      }
+
+      // Gallery Slider Functionality
+      (function() {
+        const slider = document.getElementById('gallerySlider');
+        const prevBtn = document.getElementById('galleryPrev');
+        const nextBtn = document.getElementById('galleryNext');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        if (!slider || !prevBtn || !nextBtn) return;
+        
+        let currentIndex = 0;
+        let visibleItems = 3; // Default to 3 items on desktop
+        
+        function getVisibleItems() {
+          if (window.innerWidth <= 575) return 1;
+          if (window.innerWidth <= 767) return 1;
+          if (window.innerWidth <= 991) return 2;
+          return 3;
+        }
+        
+        function updateSlider() {
+          visibleItems = getVisibleItems();
+          const maxIndex = Math.max(0, galleryItems.length - visibleItems);
+          
+          if (currentIndex > maxIndex) {
+            currentIndex = maxIndex;
+          }
+          
+          const itemWidth = 100 / visibleItems; // Percentage width
+          const translateX = -currentIndex * itemWidth;
+          slider.style.transform = `translateX(${translateX}%)`;
+          
+          // Update button states
+          prevBtn.disabled = currentIndex === 0;
+          nextBtn.disabled = currentIndex >= maxIndex;
+        }
+        
+        prevBtn.addEventListener('click', function() {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+          }
+        });
+        
+        nextBtn.addEventListener('click', function() {
+          const maxIndex = Math.max(0, galleryItems.length - visibleItems);
+          if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateSlider();
+          }
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', updateSlider);
+        
+        // Initialize
+        updateSlider();
+      })();
+
+      // Simple gallery click implementation - no libraries
+      console.log('Script starting...');
+      
+      // Test if basic JavaScript works
+      window.testFunction = function() {
+        console.log('Test function called!');
+        alert('JavaScript is working!');
+      };
+      
+      
+      // Wait for page to load completely
+      window.addEventListener('load', function() {
+        console.log('Page fully loaded, setting up gallery...');
+        
+        // Use event delegation - simpler approach
+        document.addEventListener('click', function(e) {
+          console.log('Click detected on:', e.target);
+          
+          // Check if clicked element is inside a gallery item
+          const galleryItem = e.target.closest('.gallery-item');
+          if (galleryItem) {
+            console.log('Gallery item clicked!');
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const img = galleryItem.querySelector('.gallery-image');
+            if (img) {
+              const largeSrc = img.getAttribute('data-large') || img.src;
+              console.log('Opening image:', largeSrc);
+              openImageModal(largeSrc);
+            }
+          }
+        });
+        
+        // Also add direct listeners as backup
+        setTimeout(function() {
+          const galleryItems = document.querySelectorAll('.gallery-item');
+          console.log('Found gallery items:', galleryItems.length);
+          
+          galleryItems.forEach(function(item, index) {
+            item.onclick = function(e) {
+              console.log('Direct click on item:', index);
+              e.preventDefault();
+              e.stopPropagation();
+              
+              const img = item.querySelector('.gallery-image');
+              if (img) {
+                const largeSrc = img.getAttribute('data-large') || img.src;
+                openImageModal(largeSrc);
+              }
+            };
+          });
+        }, 500);
+      });
     </script>
   </body>
   </html>
