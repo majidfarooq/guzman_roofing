@@ -387,6 +387,9 @@ h5 {
   background-color: #000000;
   border-color: #000000;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .risk-free-section .btn-dark:hover {
   background-color: #111111;
