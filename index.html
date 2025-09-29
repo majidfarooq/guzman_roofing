@@ -116,21 +116,12 @@
       <!-- Hero Section -->
       <section class="hero-section position-relative">
         <!-- Background Image -->
-        <div class="position-absolute top-0 start-0 w-100 h-100" >
-          <img
-            src="assets/hero-768.png"
-            srcset="assets/hero-768.png 768w, assets/hero-1280.png 1280w, assets/hero-1920.png 1920w"
-            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 100vw, 100vw"
-            alt="Roofing team working on a dark metal roof"
-            class="hero-bg"
-            loading="eager"
-          />
-        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 hero-bg"></div>
 
         <div class="container position-relative" style="z-index: 10;">
           <div class="row align-items-center hero-content">
             <!-- Left Content -->
-            <div class="col-lg-6 text-white my-3">
+            <div class="col-lg-6 text-white my-3 text-center text-md-start">
               <div class="mb-4">
                 <!-- Trust Badge -->
                 <div class="d-inline-block bg-primary px-4 py-2 rounded">
@@ -139,17 +130,17 @@
               </div>
 
               <!-- Main Headline -->
-              <h1 class="hero-h1 mb-4" style="line-height: 0.9; letter-spacing: -0.02em;">
+              <h1 class="hero-h1 mb-5" style="line-height: 0.9; letter-spacing: -0.02em;">
                 A Memphis Roofing Company You Can Trust
               </h1>
 
               <!-- Description -->
-              <p class="fs-5 text-white-50 mb-4" style="max-width: 38rem;">
+              <p class="fs-5 text-white-50 mb-5" style="max-width: 38rem;">
                 Licensed and insured roofing company serving Memphis, TN. Committed to excellence, we bring expertise to every project. Our team of experienced and dedicated professionals is here to help with all your roofing needs.
               </p>
 
               <!-- Social Proof Badges -->
-              <div class="d-flex flex-wrap gap-3">
+              <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
                 <img src="assets/google-reviews.png" alt="Google Reviews" class="">
                 <img src="assets/facebook-reviews.png" alt="Facebook Reviews" class="">
                
@@ -158,7 +149,7 @@
 
             <!-- Right Content - Contact Form -->
             <div class="col-lg-6 d-flex justify-content-lg-end">
-              <div class="form-bg rounded shadow-lg p-4" style=" width: 100%;">
+              <div class="form-bg rounded shadow-lg p-4 text-start" style=" width: 100%;">
                 <!-- Emergency Banner -->
                 <div class="bg-primary text-white text-center py-2 px-3 mb-1 emergency-banner">
                   <span class="small fw-bold" style="letter-spacing: 0.1em;">EMERGENCY SERVICE AVAILABLE</span>
@@ -187,7 +178,7 @@
                       id="phone"
                       type="tel"
                       name="phone"
-                      placeholder="+123-432-8446"
+                      placeholder="123-432-8446"
                       class="form-control"
                       required
                     />
@@ -225,15 +216,15 @@
         <div class="container">
           <div class="row align-items-center">
             <!-- Left Content -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 text-center text-md-start">
               <h2 class="mb-3">
                 Why Homeowners Choose <span class="text-primary">Guzman Roofing</span>
               </h2>
               <p class="mb-5">Established expertise and professional standards you can depend on</p>
               
               <!-- Feature Grid -->
-              <div class="row g-4">
-                <div class="col-md-6">
+              <div class="row g-4 text-start">
+                <div class="col-6 col-md-6">
                   <div class="bg-light p-4 rounded h-100">
                     <div class="mb-3">
                       <img src="assets/icon-licensed_contractor.jpg" alt="Licensed Contractor" class="mb-3" style="width: 40px; height: 40px; object-fit: contain;">
@@ -243,7 +234,7 @@
                   </div>
                 </div>
                 
-                <div class="col-md-6">
+                <div class="col-6 col-md-6">
                   <div class="bg-light p-4 rounded h-100">
                     <div class="mb-3">
                       <img src="assets/icon-fully-insured.jpg" alt="Fully Insured" class="mb-3" style="width: 40px; height: 40px; object-fit: contain;">
@@ -253,7 +244,7 @@
                   </div>
                 </div>
                 
-                <div class="col-md-6">
+                <div class="col-6 col-md-6">
                   <div class="bg-light p-4 rounded h-100">
                     <div class="mb-3">
                       <img src="assets/icon-warranty-protected.jpg" alt="Warranty Protected" class="mb-3" style="width: 40px; height: 40px; object-fit: contain;">
@@ -263,7 +254,7 @@
                   </div>
                 </div>
                 
-                <div class="col-md-6">
+                <div class="col-6 col-md-6">
                   <div class="bg-light p-4 rounded h-100">
                     <div class="mb-3">
                       <img src="assets/icon-city-local.jpg" alt="Memphis Local" class="mb-3" style="width: 40px; height: 40px; object-fit: contain;">
@@ -327,19 +318,19 @@
             <!-- Left Content - Before/After Image (Right Aligned) -->
             <div class="col-lg-6">
               <div class="d-flex justify-content-center justify-content-lg-end pe-0">
-                <img src="assets/before_after_roof.png" alt="Before and After Roof Transformation" class="img-fluid" style="max-width: 100%; height: auto;">
+                <img id="testimonialImage" src="assets/before_after_roof.png" alt="Before and After Roof Transformation" class="img-fluid" style="max-width: 100%; height: auto;">
               </div>
             </div>
             
             <!-- Right Content - Testimonial Slider (Left Aligned) -->
             <div class="col-lg-6">
               <div class="d-flex justify-content-center justify-content-lg-start ps-0">
-                <div class="bg-white rounded testimonial-card p-3" style="width: 550px; min-height: 320px;">
+                <div class="bg-white rounded testimonial-card p-3" style="width: 100%; max-width: 550px; min-height: 320px;">
                   <!-- Testimonial Slider Container -->
                   <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <!-- Testimonial 1 -->
-                      <div class="carousel-item active">
+                      <div class="carousel-item active" data-image="assets/before_after_roof.png">
                         <!-- Quote Icon -->
                         <div class="text-end mb-3">
                           <i class="fas fa-quote-right quote-icon"></i>
@@ -369,7 +360,7 @@
                       </div>
                       
                       <!-- Testimonial 2 -->
-                      <div class="carousel-item">
+                      <div class="carousel-item" data-image="assets/before_after_roof_02.png">
                         <!-- Quote Icon -->
                         <div class="text-end mb-3">
                           <i class="fas fa-quote-right quote-icon"></i>
@@ -399,7 +390,7 @@
                       </div>
                       
                       <!-- Testimonial 3 -->
-                      <div class="carousel-item">
+                      <div class="carousel-item" data-image="assets/before_after_roof_03.png">
                         <!-- Quote Icon -->
                         <div class="text-end mb-3">
                           <i class="fas fa-quote-right quote-icon"></i>
@@ -446,6 +437,20 @@
         </div>
       </section>
 
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var slider = document.getElementById('testimonialSlider');
+          var imgEl = document.getElementById('testimonialImage');
+          if (!slider || !imgEl) return;
+          slider.addEventListener('slide.bs.carousel', function (e) {
+            var next = e.relatedTarget;
+            if (next && next.getAttribute('data-image')) {
+              imgEl.src = next.getAttribute('data-image');
+            }
+          });
+        });
+      </script>
+
       <!-- Risk-Free Assessment Banner -->
       <section class="py-5 risk-free-section" style="background-color: #E31E24; position: relative;">
         <div class="container">
@@ -486,7 +491,7 @@
                 
                 <!-- Buttons -->
                 <div class="d-flex gap-3">
-                  <button class="btn btn-dark">Free Estimate</button>
+                  <button class="btn btn-dark">&nbsp;&nbsp; Free Estimate &nbsp;&nbsp;</button>
                   <button class="btn btn-outline-light">Financing Options</button>
                 </div>
               </div>
@@ -509,7 +514,7 @@
                 <!-- Statistics with dividers -->
                 <div class="d-flex align-items-center">
                   <!-- First Statistic -->
-                  <div class="text-center px-5">
+                  <div class="text-center px-md-5">
                     <div class="stat-number">20+</div>
                     <div class="stat-label">Years Experience</div>
                   </div>
@@ -518,7 +523,7 @@
                   <div class="stat-divider"></div>
                   
                   <!-- Second Statistic -->
-                  <div class="text-center px-5">
+                  <div class="text-center px-md-5">
                     <div class="stat-number">120+</div>
                     <div class="stat-label">Projects Completed</div>
                   </div>
@@ -527,7 +532,7 @@
                   <div class="stat-divider"></div>
                   
                   <!-- Third Statistic -->
-                  <div class="text-center px-5">
+                  <div class="text-center  px-md-5">
                     <div class="stat-number">100%</div>
                     <div class="stat-label">Licensed & Insured</div>
                   </div>
@@ -548,7 +553,7 @@
                 <h2 class="text-white mb-3">Professional Roofing Services</h2>
                 <h3 class="text-white mb-4">Trusted roofing solutions for Memphis homeowners</h3>
                 <p class="text-white mb-4">Guzman Roofing provides comprehensive roofing services including emergency repairs, roof replacement, inspections, and storm damage assistance. Our experienced team ensures quality workmanship and customer satisfaction.</p>
-                <div class="text-center">
+                <div class="text-left">
                   <button class="btn btn-primary">View More</button>
                 </div>
               </div>
@@ -564,7 +569,7 @@
                       <!-- Emergency Repairs Card (Red) - Top -->
                       <div class="service-card emergency-card mb-4">
                         <div class="service-icon">
-                          <i class="fas fa-bell"></i>
+                          <img src="assets/icon_services_emergency_repairs.png" alt="Emergency Repairs" class="service-icon-img">
                         </div>
                         <h4 class="text-white">Emergency Repairs</h4>
                         <p class="text-white mb-0">When a roofing emergency strikes — whether it’s storm damage, sudden leaks, or fallen debris — you need fast, reliable help. Our 24/7 emergency roof repair service ensures your home or business is protected from further damage. We respond quickly, assess the problem, and provide immediate solutions to keep your property safe until permanent repairs are completed.</p>
@@ -573,7 +578,7 @@
                       <!-- Roof Inspection Card (White) - Bottom -->
                       <div class="service-card white-card">
                         <div class="service-icon red-icon">
-                          <i class="fas fa-search"></i>
+                          <img src="assets/icon_services_roof_inspection.png" alt="Roof Inspection" class="service-icon-img">
                         </div>
                         <h4 class="">Roof Inspection</h4>
                         <p class="mb-0">Regular roof inspections help catch small issues before they turn into expensive repairs. Our experts carefully assess your shingles, flashing, gutters, and overall roof health to ensure your home stays protected year-round. With a detailed inspection report, you’ll know exactly what your roof needs — whether it’s maintenance, repair, or replacement.</p>
@@ -587,7 +592,7 @@
                       <!-- Roof Replacement Card (White) - Top -->
                       <div class="service-card white-card mb-4">
                         <div class="service-icon red-icon">
-                          <i class="fas fa-home"></i>
+                          <img src="assets/icon_services_roof_replacement.png" alt="Roof Replacement" class="service-icon-img">
                         </div>
                         <h4 class="">Roof Replacement</h4>
                         <p class="mb-0">When repairs are no longer enough, a full roof replacement may be the best option to protect your home. We offer durable, high-quality roofing materials and professional installation designed to last for decades. From selecting the right style to final cleanup, we make the replacement process smooth, stress-free, and built to stand strong against the elements.</p>
@@ -596,7 +601,7 @@
                       <!-- Storm Damage & Insurance Card (White) - Bottom -->
                       <div class="service-card white-card">
                         <div class="service-icon red-icon">
-                          <i class="fas fa-cloud-rain"></i>
+                          <img src="assets/icon_services_storm_damage_insurance.png" alt="Storm Damage & Insurance" class="service-icon-img">
                         </div>
                         <h4 class="">Storm Damage & Insurance</h4>
                         <p class="mb-0">Storms can cause unexpected damage — from missing shingles to major leaks. Our team specializes in identifying storm-related issues and guiding you through the insurance claim process. We’ll work directly with your insurance company to make sure you get the coverage you deserve, while restoring your roof quickly and efficiently.</p>
@@ -812,7 +817,7 @@
         <div class="row">
           <!-- Company Branding -->
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="footer-brand">
+            <div class="footer-brand text-center text-md-start">
               <img src="assets/footer_logo.png" alt="Guzman Roofing Logo" class="footer-logo mb-3">
               <p class="footer-tagline mb-3">Memphis area's trusted roofing professionals</p>
               <p class="footer-credentials">
@@ -822,7 +827,7 @@
           </div>
           
           <!-- Services Column -->
-          <div class="col-lg-2 col-md-6 mb-4">
+          <div class="col-lg-2 col-md-6 mb-4 text-center text-md-start">
             <h5 class="footer-heading mb-3">Services</h5>
             <ul class="footer-list">
               <li><a href="#" class="footer-link">Roof Replacement</a></li>
@@ -833,7 +838,7 @@
           </div>
           
           <!-- Company Column -->
-          <div class="col-lg-2 col-md-6 mb-4">
+          <div class="col-lg-2 col-md-6 mb-4 text-center text-md-start">
             <h5 class="footer-heading mb-3">Company</h5>
             <ul class="footer-list">
               <li><a href="#" class="footer-link">Reviews</a></li>
@@ -844,7 +849,7 @@
           </div>
           
           <!-- Business Info Column -->
-          <div class="col-lg-2 col-md-6 mb-4">
+          <div class="col-lg-2 col-md-6 mb-4 text-center text-md-start">
             <h5 class="footer-heading mb-3">Business Info</h5>
             <ul class="footer-list">
               <li><span class="footer-text">TN License: #12345</span></li>
@@ -855,18 +860,18 @@
           </div>
           
           <!-- Contact Details Column -->
-          <div class="col-lg-3 col-md-6 mb-4">
+          <div class="col-lg-3 col-md-6 mb-4 text-center text-md-start">
             <h5 class="footer-heading mb-3">Contact Details</h5>
             <ul class="footer-list">
-              <li class="footer-contact-item">
+              <li class="footer-contact-item d-flex justify-content-center justify-content-md-start">
                 <i class="fas fa-phone footer-icon"></i>
                 <span class="footer-text">(901) 264-3363</span>
               </li>
-              <li class="footer-contact-item">
+              <li class="footer-contact-item d-flex justify-content-center justify-content-md-start">
                 <i class="fas fa-clock footer-icon"></i>
                 <span class="footer-text">Mon-Sat: 7am-6pm</span>
               </li>
-              <li class="footer-contact-item">
+              <li class="footer-contact-item d-flex justify-content-center justify-content-md-start">
                 <i class="fas fa-envelope footer-icon"></i>
                 <span class="footer-text">contactus@guzmanroofing.com</span>
               </li>
@@ -877,7 +882,7 @@
         <!-- Bottom Footer Bar -->
         <div class="footer-bottom">
           <div class="row align-items-center">
-            <div class="col-md-4">
+            <div class="col-md-4 text-center text-md-start">
               <p class="footer-copyright mb-0">© 2025 Guzman Roofing And Construction. All Rights Reserved.</p>
             </div>
             <div class="col-md-4 text-center">
@@ -896,8 +901,8 @@
                 </a>
               </div>
             </div>
-            <div class="col-md-4 text-md-end">
-              <div class="footer-legal">
+            <div class="col-md-4 text-center text-md-end mt-2 mt-md-0">
+              <div class="footer-legal d-flex justify-content-center justify-content-md-end">
                 <a href="#" class="footer-legal-link">Privacy Policy</a>
                 <span class="footer-separator">|</span>
                 <a href="#" class="footer-legal-link">Terms Of Service</a>

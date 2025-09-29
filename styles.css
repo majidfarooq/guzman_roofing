@@ -102,15 +102,17 @@ input.btn-outline-primary {
   background-color: white !important;
 }
 
-/* Hero image sizing */
+/* Hero background image */
 .hero-bg {
-  width: auto;
-  height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
-  min-height: 70vh;
-  margin: 0 auto;
-  display: block;
+  background-image: image-set(
+    url('assets/hero-768.png') type('image/png') 1x,
+    url('assets/hero-1280.png') type('image/png') 2x,
+    url('assets/hero-1920.png') type('image/png') 3x
+  );
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  /* min-height: 70vh; */
 }
 
 /* Hero section adjustments */
@@ -211,6 +213,8 @@ h5 {
   position: relative;
   z-index: 0;
 }
+
+
 .testimonial-arrows{
   margin-top: -20px;
   position: absolute;
@@ -428,12 +432,18 @@ h5 {
 }
 
 .stat-label {
-  font-size: 31px;
+  font-size: 22px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -3%;
   color: #1E1E1E;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .stat-label {
+    font-size: 31px;
+  }
 }
 
 .stat-divider {
@@ -577,7 +587,13 @@ h5 {
   background-position: bottom;
   background-repeat: no-repeat;
   min-height: 600px;
-  padding-bottom: 30rem !important
+  padding-bottom: 15rem !important;
+}
+
+@media (min-width: 768px) {
+  .faq-section {
+    padding-bottom: 30rem !important;
+  }
 }
 
 .faq-section h2 {
@@ -987,8 +1003,15 @@ h5 {
 }
 
 .emergency-card .service-icon {
-  color: white;
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.emergency-card .service-icon .service-icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: .5rem;
 }
 
 .emergency-card h4 {
@@ -1002,7 +1025,7 @@ h5 {
 .emergency-card p {
   color: white;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 250;
   line-height: 19px;
   letter-spacing: 0%;
 }
@@ -1013,8 +1036,15 @@ h5 {
 }
 
 .white-card .service-icon.red-icon {
-  color: #E31E24;
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.white-card .service-icon.red-icon .service-icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: .5rem;
 }
 
 .white-card h4 {
@@ -1028,7 +1058,7 @@ h5 {
 .white-card p {
   color: #1E1E1E;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 250;
   line-height: 19px;
   letter-spacing: 0%;
 }
@@ -1152,8 +1182,8 @@ p.text-white-50 {
   background-image: url('assets/bg_white.png');
   background-repeat: repeat;
   background-size: auto;
-  padding: 1.5rem 2.5rem 2.5rem 2.5rem !important;
-  border-radius: 1rem;
+  padding: 2rem 3rem 3rem 3rem !important;
+  border-radius: 1rem !important;
 }
 
 /* Form Label Styling */
@@ -1341,14 +1371,14 @@ p.text-white-50 {
     height: 45px;
   }
   
-  .arrow-icon {
-    width: 18px;
-    height: 18px;
-  }
+  
 }
 
 /* Mobile Large (up to 767px) */
 @media (max-width: 767px) {
+  .roof-image-absolute{
+    display: none;
+  }
   .hero-h1 {
     font-size: 36px;
   }
@@ -1372,6 +1402,7 @@ p.text-white-50 {
   .testimonial-card {
     width: 100%;
     min-height: 220px;
+    margin-left: 0;
   }
   
   .cta-title {
@@ -1407,10 +1438,7 @@ p.text-white-50 {
     height: 40px;
   }
   
-  .arrow-icon {
-    width: 16px;
-    height: 16px;
-  }
+ 
 }
 
 /* Mobile Small (up to 575px) */
@@ -1486,10 +1514,7 @@ p.text-white-50 {
     height: 35px;
   }
   
-  .arrow-icon {
-    width: 14px;
-    height: 14px;
-  }
+  
   
   .gallery-section {
     padding: 3rem 0;
