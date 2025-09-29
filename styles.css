@@ -106,7 +106,6 @@ input.btn-outline-primary {
 .hero-bg {
   width: auto;
   height: 100%;
-  max-width: 100%;
   object-fit: contain;
   object-position: center bottom;
   min-height: 70vh;
@@ -123,7 +122,11 @@ input.btn-outline-primary {
 .hero-content {
   min-height: 80vh;
 }
-
+.emergency-banner{
+  width: max-content;
+  margin: 0 auto;
+  font-size: 18px;
+}
 /* Custom typography to match design */
 h1 {
   font-size: 54px;
@@ -143,8 +146,8 @@ h2{
 }
 
 h3 {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 34px !important;
+  font-weight: bold !important;
 }
 
 h5 {
@@ -189,11 +192,11 @@ h5 {
 }
 
 .proven-results-section p {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 31px;
+  line-height: 30px;
   letter-spacing: -2%;
-  color: #1E1E1E;
+  color: #434343;
 }
 
 /* Testimonial card styling */
@@ -208,11 +211,11 @@ h5 {
   position: relative;
   z-index: 0;
 }
-testimonial-arrows{
+.testimonial-arrows{
   margin-top: -20px;
   position: absolute;
   right: 0;
-  bottom: -40px;
+  bottom: -50px;
 }
 .testimonial-card .stars {
   color: #FFD700;
@@ -252,8 +255,8 @@ testimonial-arrows{
 
 /* Navigation arrows */
 .nav-arrow {
-  width: 50px;
-  height: 50px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -275,27 +278,123 @@ testimonial-arrows{
   position: relative;
 }
 
+/* Black Feature Strip */
+.black-strip-section {
+  background-color: #000000;
+}
+.black-strip {
+  position: relative;
+  overflow: hidden;
+  padding: 0.75rem 0;
+}
+.black-strip-track {
+  display: inline-flex;
+  gap: 2.5rem;
+  white-space: nowrap;
+  will-change: transform;
+  animation: strip-marquee 25s linear infinite;
+}
+.black-strip .strip-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+}
+.black-strip .strip-icon {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  color: #EC2224;
+}
+.black-strip .strip-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@keyframes strip-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 .risk-free-section h2 {
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 114%;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
   letter-spacing: -4%;
-  color: white;
+  color: #ffffff;
 }
 
 .risk-free-section p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 31px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
   letter-spacing: -2%;
-  color: white;
+  color: #ffffff;
 }
 
 .risk-free-section .check-item {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+/* Risk-Free list layout and icon */
+.riskfree-list .li-tick {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  margin-top: 2px;
+}
+
+/* CTA benefits tick icon re-use */
+.cta-benefits .li-tick {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+.cta-benefits .cta-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.riskfree-list .check-item span {
+  display: inline-block;
+}
+
+/* Risk-Free buttons */
+.risk-free-section .btn {
+  border-radius: 5px;
+  padding: 14px 28px;
   font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  color: white;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.risk-free-section .btn-dark {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+.risk-free-section .btn-dark:hover {
+  background-color: #111111;
+  border-color: #111111;
+}
+.risk-free-section .btn-outline-light {
+  border-width: 2px;
+  color: #ffffff;
+}
+.risk-free-section .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
 
 /* Absolutely Positioned Roof Image */
@@ -323,7 +422,7 @@ testimonial-arrows{
 .stat-number {
   font-size: 94px;
   font-weight: bold;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -9%;
   color: #000000;
 }
@@ -331,7 +430,7 @@ testimonial-arrows{
 .stat-label {
   font-size: 31px;
   font-weight: 400;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -3%;
   color: #1E1E1E;
   margin: 0;
@@ -392,8 +491,8 @@ testimonial-arrows{
 }
 
 .arrow-icon {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   display: block;
   object-fit: contain;
 }
@@ -494,7 +593,7 @@ testimonial-arrows{
   font-weight: 400;
   line-height: 31px;
   letter-spacing: -2%;
-  color: #1E1E1E;
+  color: #434343;
 }
 
 /* FAQ Container */
@@ -517,9 +616,10 @@ testimonial-arrows{
   background: none;
   border: none;
   padding: 1.5rem 2rem 1.5rem 0;
-  font-size: 18px;
-  font-weight: 600;
-  color: #1E1E1E;
+  font-size: 24px;
+  font-weight: 700;
+  color: #EC2224;
+  line-height: normal;
   box-shadow: none;
   text-align: left;
   position: relative;
@@ -527,7 +627,7 @@ testimonial-arrows{
 
 .accordion-button:not(.collapsed) {
   background: none;
-  color: #E31E24;
+  color: #EC2224;
   box-shadow: none;
 }
 
@@ -571,9 +671,10 @@ testimonial-arrows{
 
 .accordion-body {
   padding: 0 0 1.5rem 0;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 300;
   line-height: 24px;
-  color: #6c757d;
+  color: #000000;
 }
 
 /* FAQ Images Container */
@@ -892,7 +993,7 @@ testimonial-arrows{
 
 .emergency-card h4 {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   line-height: 28px;
   letter-spacing: 0%;
@@ -900,9 +1001,9 @@ testimonial-arrows{
 
 .emergency-card p {
   color: white;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 19px;
   letter-spacing: 0%;
 }
 
@@ -918,7 +1019,7 @@ testimonial-arrows{
 
 .white-card h4 {
   color: #1E1E1E;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   line-height: 28px;
   letter-spacing: 0%;
@@ -926,9 +1027,9 @@ testimonial-arrows{
 
 .white-card p {
   color: #1E1E1E;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 19px;
   letter-spacing: 0%;
 }
 
@@ -959,7 +1060,7 @@ p.text-white-50 {
   font-size: 18px;
   color: #1E1E1E;
   font-weight: 400; /* Regular */
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -5%;
   text-decoration: none;
   transition: font-weight 0.3s ease;
@@ -972,7 +1073,7 @@ p.text-white-50 {
   font-size: 18px;
   color: #1E1E1E;
   font-weight: 600; /* Semi-bold */
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -5%;
   text-decoration: none;
 }
@@ -982,7 +1083,7 @@ p.text-white-50 {
   font-size: 18px;
   color: #1E1E1E;
   font-weight: 400; /* Regular */
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -5%;
 }
 
@@ -991,7 +1092,7 @@ p.text-white-50 {
    font-size: 18px;
   color: #1E1E1E;
   font-weight: 600; /* Semi-bold */
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -5%;
   background-color: #f8f9fa;
 }
@@ -1051,6 +1152,8 @@ p.text-white-50 {
   background-image: url('assets/bg_white.png');
   background-repeat: repeat;
   background-size: auto;
+  padding: 1.5rem 2.5rem 2.5rem 2.5rem !important;
+  border-radius: 1rem;
 }
 
 /* Form Label Styling */
@@ -1069,7 +1172,7 @@ p.text-white-50 {
   font-size: 19px;
   color: #9A9A9A;
   font-weight: 400; /* Regular */
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -4%;
   opacity: 1; /* Ensure placeholder is visible */
 }
@@ -1080,7 +1183,7 @@ p.text-white-50 {
   font-size: 19px;
   color: #000000;
   font-weight: 400; /* Regular */
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -4%;
   border: 1px solid #d1d5db;
   border-radius: 0.375rem;
