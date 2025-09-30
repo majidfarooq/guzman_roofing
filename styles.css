@@ -1322,6 +1322,9 @@ p.text-white-50 {
 
 /* Tablet (up to 991px) */
 @media (max-width: 991px) {
+  .hero-bg {
+    background-size: cover;
+  }
   .services-left-bg{
     min-height: auto;
     padding-bottom: 4rem;
@@ -1400,6 +1403,9 @@ p.text-white-50 {
   
   .hero-content {
     min-height: 50vh;
+  }
+  .hero-bg {
+    background-size: cover;
   }
   
   .testimonial-card {
