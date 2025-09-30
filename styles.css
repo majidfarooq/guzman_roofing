@@ -111,7 +111,7 @@ input.btn-outline-primary {
   );
   background-position: center bottom;
   background-repeat: no-repeat;
-  /* background-size: contain; */
+  background-size: cover;
   /* min-height: 70vh; */
 }
 
